@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+func Hello(name string) string{
+	message := fmt.Sprintf("Ola %v. oia", name)
+	return message
+}
+
 func main(){
-	fmt.Println("Hello World!")
+	msg := Hello("Fernanda")
+	fmt.Println(msg)
 }
